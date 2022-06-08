@@ -24,7 +24,6 @@
   "editable": true,
   "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
-  "id": 7,
   "links": [],
   "liveNow": false,
   "panels": [
@@ -264,18 +263,18 @@
       "id": 7,
       "options": {
         "colorMode": "value",
-        "graphMode": "area",
+        "graphMode": "none",
         "justifyMode": "auto",
         "orientation": "auto",
         "reduceOptions": {
           "calcs": [
-            "lastNotNull"
+            "last"
           ],
           "fields": "",
           "values": false
         },
         "text": {},
-        "textMode": "auto"
+        "textMode": "value"
       },
       "pluginVersion": "8.5.3",
       "targets": [
@@ -284,15 +283,18 @@
             "type": "prometheus",
             "uid": "PBFA97CFB590B2093"
           },
-          "exemplar": true,
-          "expr": "dns_query_result_code",
+          "editorMode": "code",
+          "exemplar": false,
+          "expr": "dns_query_result_code{server=\"8.8.8.8\"}",
+          "format": "table",
           "instant": false,
           "interval": "",
           "legendFormat": "",
+          "range": true,
           "refId": "A"
         }
       ],
-      "title": "DNS Status",
+      "title": "External DNS Status",
       "type": "stat"
     },
     {

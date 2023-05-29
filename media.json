@@ -2917,75 +2917,6 @@
       "fieldConfig": {
         "defaults": {
           "color": {
-            "mode": "continuous-BlPu"
-          },
-          "mappings": [],
-          "thresholds": {
-            "mode": "absolute",
-            "steps": [
-              {
-                "color": "green",
-                "value": null
-              },
-              {
-                "color": "red",
-                "value": 80
-              }
-            ]
-          }
-        },
-        "overrides": []
-      },
-      "gridPos": {
-        "h": 10,
-        "w": 24,
-        "x": 0,
-        "y": 55
-      },
-      "id": 23,
-      "options": {
-        "displayMode": "lcd",
-        "minVizHeight": 10,
-        "minVizWidth": 0,
-        "orientation": "horizontal",
-        "reduceOptions": {
-          "calcs": [
-            "lastNotNull"
-          ],
-          "fields": "",
-          "values": false
-        },
-        "showUnfilled": true,
-        "valueMode": "color"
-      },
-      "pluginVersion": "9.5.2",
-      "targets": [
-        {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
-          },
-          "editorMode": "code",
-          "exemplar": false,
-          "expr": "sonarr_episode_quality_total",
-          "format": "time_series",
-          "instant": true,
-          "legendFormat": "{{quality}}",
-          "range": false,
-          "refId": "A"
-        }
-      ],
-      "title": "Qualities",
-      "type": "bargauge"
-    },
-    {
-      "datasource": {
-        "type": "prometheus",
-        "uid": "${DS_PROMETHEUS}"
-      },
-      "fieldConfig": {
-        "defaults": {
-          "color": {
             "mode": "palette-classic"
           },
           "custom": {
@@ -3040,7 +2971,7 @@
         "h": 9,
         "w": 8,
         "x": 0,
-        "y": 65
+        "y": 55
       },
       "id": 24,
       "options": {
@@ -3145,7 +3076,7 @@
         "h": 9,
         "w": 8,
         "x": 8,
-        "y": 65
+        "y": 55
       },
       "id": 25,
       "options": {
@@ -3241,7 +3172,7 @@
         "h": 9,
         "w": 8,
         "x": 16,
-        "y": 65
+        "y": 55
       },
       "id": 55,
       "options": {
